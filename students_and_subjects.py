@@ -19,7 +19,7 @@ def sort_database(unsorted):
 
 
 def show_all(database):
-    database_sorted = sort_database(database)
+    database_sorted = sort_database(deepcopy(database))
     for record in database_sorted.items():
         print(record)
     return
